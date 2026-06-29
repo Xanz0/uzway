@@ -12,10 +12,22 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#" class="active">Bosh sahifa</a></li>
+          <li><a href="<?=site_url(LANG_URL)?>" class="active"><i class="bi bi-house-door"></i> <?=lang('home')?></a></li>
           <?php
+            // Menyu bandlari uchun iconka xaritasi (alias bo'yicha)
+            $menu_icons = array(
+              'biz-haqimizda'        => 'bi-info-circle',
+              'o-nas'                => 'bi-info-circle',
+              'yangiliklar'          => 'bi-newspaper',
+              'novosti'              => 'bi-newspaper',
+              'interaktiv-xizmatlar' => 'bi-grid-3x3-gap',
+              'aloqa'                => 'bi-telephone',
+              'kontakty'             => 'bi-telephone',
+              'videogaleriya'        => 'bi-camera-video',
+            );
             foreach ($this->cat as $cat) {
             // active class name: current
+              $m_icon = isset($menu_icons[$cat['alias']]) ? '<i class="bi '.$menu_icons[$cat['alias']].'"></i> ' : '<i class="bi bi-grid"></i> ';
               $child_menu = $this->menu_model->get_menu_child(LANG_URL,$cat['id_key']);
               
               if(count($child_menu) > 0){
@@ -25,7 +37,7 @@
                 $have_child = '';
                 $icon = '';
               }
-            echo '<li '.$have_child.'><a href="'.site_url(LANG_URL.'/home/blog/'.$cat['alias']).'">'.$cat['title'].$icon.'</a>';
+            echo '<li '.$have_child.'><a href="'.site_url(LANG_URL.'/home/blog/'.$cat['alias']).'">'.$m_icon.$cat['title'].$icon.'</a>';
 
               
               echo "<ul>";

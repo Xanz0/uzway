@@ -70,7 +70,7 @@
                               <img src="'.get_thumb($value['text']).'"  alt="'.$value['title'].'">
                               <div>
                                 <h4><a href="'.site_url(LANG_URL.'/view/'.$value['id_key'].'-'.$value['alias'].'.html').'">'.character_limiter(strip_tags($value['title']),20).'</a></h4>
-                                <time datetime="'.nice_date($value['created'],'d.m.Y').'">'.nice_date($value['created'],'d.m.Y').'</time>
+                                <time datetime="'.nice_date($value['created'],'d.m.Y').'"><i class="bi bi-calendar3"></i> '.nice_date($value['created'],'d.m.Y').'</time>
                               </div>
                             </div>';
                     }

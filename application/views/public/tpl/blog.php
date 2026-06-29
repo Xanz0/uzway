@@ -22,7 +22,7 @@
 
                         <div class="post-img position-relative overflow-hidden">
                           <img src="'.get_thumb($value['text']).'" class="img-fluid" style="width: 100%" alt="">
-						  <span class="post-date">'.nice_date($value['created'],'d.m.Y').'</span>
+						  <span class="post-date"><i class="bi bi-calendar3"></i> '.nice_date($value['created'],'d.m.Y').'</span>
                         </div>
 
                         <div class="post-content d-flex flex-column">

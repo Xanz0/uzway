@@ -6,6 +6,7 @@
     
     
       <div class=" section-header">
+        <span class="sh-icon"><i class="bi bi-play-circle"></i></span>
         <h2><?=lang('video')?></h2>
       </div>
 

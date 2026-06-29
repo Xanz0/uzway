@@ -28,6 +28,8 @@
 
   <!-- Template Main CSS File -->
   <link href="<?=base_url('assets/public/css/main.css')?>" rel="stylesheet">
+  <!-- Modern UI Theme (main.css ustidan override) -->
+  <link href="<?=base_url('assets/public/css/modern.css')?>" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
