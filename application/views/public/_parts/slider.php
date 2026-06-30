@@ -7,7 +7,7 @@
           <div class="col-lg-6 text-center">
             <h2 data-aos="fade-down" style="font-size: 30px">“NAVOIY MINTAQAVIY YO’LLARGA BUYURTMACHI XIZMATI” DUK</h2>
              
-            <a data-aos="fade-up" data-aos-delay="200" href="<?=site_url(LANG_URL.'/home/blog/biz-haqimizda')?>" class="btn-get-started"><?=lang('about')?></a>
+            <a data-aos="fade-up" data-aos-delay="200" href="<?=site_url(LANG_URL.'/home/blog/biz-haqimizda')?>" class="btn-get-started"><?=lang('about')?> <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
       </div>

@@ -35,10 +35,10 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4><?=lang('useful_links')?></h4>
             <ul>
-              <li><a href="http://my.gov.uz">My.gov.uz</a></li>
-              <li><a href="http://lex.uz">Lex.Uz</a></li>
-              <li><a href="http://mintrans.uz">Mintrans.Uz</a></li>
-              <li><a href="http://president.uz">President.Uz</a></li>
+              <li><a href="http://my.gov.uz"><i class="bi bi-chevron-right"></i> My.gov.uz</a></li>
+              <li><a href="http://lex.uz"><i class="bi bi-chevron-right"></i> Lex.Uz</a></li>
+              <li><a href="http://mintrans.uz"><i class="bi bi-chevron-right"></i> Mintrans.Uz</a></li>
+              <li><a href="http://president.uz"><i class="bi bi-chevron-right"></i> President.Uz</a></li>
             </ul>
           </div><!-- End footer links column-->
 
@@ -58,7 +58,7 @@
                   $menu = $this->menu_model->get_menu($this->uri->segment(1));
 
                   foreach ($menu as $key => $value) {
-                      echo '<li><a href="'.site_url(LANG_URL.'/home/blog/'.$value['alias']).'">'.$value['title'].'</a></li>';
+                      echo '<li><a href="'.site_url(LANG_URL.'/home/blog/'.$value['alias']).'"><i class="bi bi-chevron-right"></i> '.$value['title'].'</a></li>';
                   }
               ?>
             </ul>
